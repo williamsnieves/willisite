@@ -9,4 +9,7 @@ class Link(models.Model):
 	name = models.CharField(max_length=200)
 	alias = models.CharField(max_length=200)
 	menu = models.ForeignKey(Menu)
-	pub_date = models.DateTimeField(auto_now=True) 
+	pub_date = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		return self.name
