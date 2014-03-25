@@ -3,40 +3,59 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width,maximun-scale=1,minimun-scale=1"/>
+	<meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1"/>
 	<title>Portfolio Willi's Snow</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/webstyles.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/windowswebstyles.css' %}" />
+	<script src="{% static 'foundation/vendor/modernizr.js' %}"></script>
+	<script src="{% static 'js/prefixfree.js' %}"></script>
 </head>
 <body>
 
-	<header>
-		<figure>
-			<img src="http://placehold.it/50x50" />
-		</figure>
+	<header class="row header">
+		<p class="icon-menus"></p>
 		<h1>Website erwilli</h1>
 		<figure>
-			<img src="http://placehold.it/50x50" />
+			<img src="{% static 'img/logowilli.png' %}" />
 		</figure>
 	</header>
-	<section>
-		<section>
+	<section class="row container">
+		<section class="small-2 columns">
 			<figure>
-				<img src="http://placehold.it/320x217" />
+				<img src="{% static 'img/testimg.png' %}" />
 			</figure>
 		</section>
-		<section>
-			<ul>
-				<li>Bio</li>
-				<li>knowledge</li>
+		<section class="small-10 columns seudomenu">
+			<ul id="list-menu">
+				<li>
+					<a href="" class="icon-arrow-down"></a>
+					<p>Bio</p>
+				</li>
+				<li>
+					<a href="" class="icon-arrow-down"></a>
+					<p>knowledge</p>
+				</li>
 			</ul>
 		</section>
 	</section>
-	<footer>
+	<footer class="row footer">
 		<p><a href="#">site.com</a></p>
-		<p>icono face</p>
-		<p>icono twit</p>
-		<p>icono twit</p>
+		<ul class="share-icons">
+			<li>
+				<p class="icon-facebook"></p>
+			</li>
+			<li>
+				<p class="icon-twitter"></p>
+			</li>
+			<li>
+				<p class="icon-linkedin"></p>
+			</li>
+		</ul>
 	</footer>
-
+	<script src="{% static 'foundation/vendor/jquery.js' %}"></script>
+    <script src="{% static 'foundation/foundation.min.js' %}"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
