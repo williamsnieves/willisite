@@ -95,7 +95,7 @@ header p
 header h1
 	font-size 1.6em
 	font-weight normal
-	margin-right 1.5em
+	margin-right 0.5em
 	text-align center
 
 header .icon-menus
@@ -116,6 +116,9 @@ header .icon-menus
 
 .container figure img
 	width 100%
+
+.container .grid-menu
+	display none
 
 .container .seudomenu #list-menu
 	left 0
@@ -140,11 +143,14 @@ header .icon-menus
 	text-align center
 	color azul_clarito
 
-.header figure img
+.header figure.logo img
 	margin 1em 0.5em 0 0
 	position absolute
 	right 0
 	top 0
+
+.header figure.profile
+	display none
 
 .footer
 	position relative
@@ -173,6 +179,34 @@ header .icon-menus
 .footer .share-icons li p
 	margin 0 0.2em
 	
+@media screen and (min-width: 480px)
+	header
+		background gris_oscuro
+
+	header h1
+		margin-right 0
+
+	header .icon-menus
+		display none
+
+	.header figure.logo img
+		left 0
+		margin-left: 1.5em;
+
+	.header figure.profile
+		display block
+
+		img
+			margin 1em 0.5em 0 0
+			position absolute
+			right 0
+			top 0
+
+	.container .grid-menu
+		display block
+			
+
+
 
 
 

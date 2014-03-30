@@ -15,11 +15,17 @@
 	<header class="row header">
 		<p class="icon-menus"></p>
 		<h1>Website erwilli</h1>
-		<figure>
+		<figure class="logo">
+			<img src="{% static 'img/logowilli.png' %}" />
+		</figure>
+		<figure class="profile">
 			<img src="{% static 'img/logowilli.png' %}" />
 		</figure>
 	</header>
 	<section class="row container">
+		<section class="grid-menu">
+			<p>freewall</p>
+		</section>
 		<section class="small-2 columns">
 			<figure>
 				<img src="{% static 'img/testimg.png' %}" />
@@ -54,6 +60,8 @@
 	</footer>
 	<script src="{% static 'foundation/vendor/jquery.js' %}"></script>
     <script src="{% static 'foundation/foundation.min.js' %}"></script>
+    <script src="{% static 'js/freewall.js' %}"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
     <script>
       $(document).foundation();
     </script>
